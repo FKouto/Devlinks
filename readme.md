@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/banner.png" width="100%">
+  <img alt="projeto DevLinks" src=".github/banner-project.png" width="100%">
 </p>
 
 ## 🚀 Technologies
