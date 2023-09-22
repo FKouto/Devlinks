@@ -5,9 +5,13 @@
 }
 
 :root {
-  --text-color: #F9F9F9;
+  --text-color: #f9f9f9;
   --bg-color: hsla(60, 0%, 0%, 1);
-  --bg-url: radial-gradient(at 86% 89%, hsla(268, 77%, 24%, 1) 0px, transparent 50%),
+  --bg-url: radial-gradient(
+      at 86% 89%,
+      hsla(268, 77%, 24%, 1) 0px,
+      transparent 50%
+    ),
     radial-gradient(at 9% 37%, hsla(296, 63%, 26%, 1) 0px, transparent 50%),
     radial-gradient(at 1% 67%, hsla(299, 75%, 46%, 1) 0px, transparent 50%),
     radial-gradient(at 63% 44%, hsla(108, 64%, 1%, 1) 0px, transparent 50%),
@@ -22,9 +26,13 @@
 }
 
 .light {
-  --text-color: #1D1D1D;
+  --text-color: #1d1d1d;
   --bg-color: #d6ff99;
-  --bg-url: radial-gradient(at 86% 89%, hsla(100, 77%, 74%, 1) 0px, transparent 50%),
+  --bg-url: radial-gradient(
+      at 86% 89%,
+      hsla(100, 77%, 74%, 1) 0px,
+      transparent 50%
+    ),
     radial-gradient(at 9% 37%, hsla(246, 81%, 71%, 1) 0px, transparent 50%),
     radial-gradient(at 1% 67%, hsla(131, 76%, 76%, 1) 0px, transparent 50%),
     radial-gradient(at 63% 44%, hsla(305, 79%, 71%, 1) 0px, transparent 50%),
@@ -34,12 +42,12 @@
   --stroke-color: rgba(0, 0, 0, 0.1);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, .1);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
 body * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text-color);
 }
 
@@ -69,20 +77,20 @@ body {
 #profile p {
   font-weight: 500;
   line-height: 24px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 /* swicth */
 #switch {
   width: 64px;
   position: relative;
-  margin: .25rem auto;
+  margin: 0.25rem auto;
 }
 
 #switch button {
   width: 2rem;
   height: 2rem;
-  background: #F9F9F9 var(--switch-bg-url) no-repeat center;
+  background: #f9f9f9 var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -91,11 +99,11 @@ body {
   left: 0;
   transform: translateY(-50%);
 
-  animation: slide-dark .2s;
+  animation: slide-dark 0.2s;
 }
 
 .light #switch button {
-  animation: slide-light .2s forwards;
+  animation: slide-light 0.2s forwards;
 }
 
 #switch button:hover {
@@ -158,7 +166,7 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  transition: background .5s;
+  transition: background 0.5s;
   border-radius: 45%;
 }
 
@@ -169,13 +177,13 @@ ul li a:hover {
 footer {
   padding: 1.5rem 0;
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 footer {
   padding: 1.5rem 0;
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 /* animation */
@@ -198,9 +206,10 @@ footer {
     left: 0;
   }
 }
+
 /* media query */
-@media(min-width: 1024px) {
-  body{
+@media (min-width: 1024px) {
+  body {
     height: 100vh;
     overflow-y: hidden;
   }
